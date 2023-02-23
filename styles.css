@@ -1,7 +1,9 @@
-.displayResult {
+.appContainer {
+    background-color: red;
+
 }
 
-.appContainer {
+.displayResult {
 }
 
 .firstLine {

@@ -1,20 +1,84 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .appContainer {
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #ffd7ba;
 }
 
 .displayResult {
+  padding: 50px;
+  background-color: gray;
+  border: solid 3px black;
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px;
 }
 
 .firstLine {
 }
 
 .number {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 40px;
+  font-size: 60px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid 3px black;
 }
 
 .operation {
+  color: black;
+  background-color: #f2930b;
+  padding: 40px;
+  font-size: 60px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid 3px black;
+}
+.equal {
+  color: black;
+  background-color: #f2930b;
+  padding: 40px;
+  font-size: 60px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid 3px black;
+}
+
+.comma {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 40px;
+  font-size: 60px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid 3px black;
 }
 
 .secondLine {
 }
 
 .fourthLine {
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 41%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }

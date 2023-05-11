@@ -91,3 +91,13 @@ body {
   margin: 5px;
   border: solid 3px black;
 }
+
+.cleners {
+  color: black;
+  background-color: #f2930b;
+  padding: 10px 50px;
+  font-size: 60px;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid 3px black;
+}

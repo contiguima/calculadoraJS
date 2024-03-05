@@ -11,6 +11,7 @@ const boton0 = document.getElementById("0");
 const screen = document.getElementById("screen");
 const clear = document.getElementById("clear");
 const equal = document.getElementById("=");
+const sum = document.getElementById("+");
 let digitos = [];
 
 boton7.addEventListener("click", consol7);
@@ -25,74 +26,74 @@ boton8.addEventListener("click", consol8);
 boton9.addEventListener("click", consol9);
 equal.addEventListener("click", arrayToNumber);
 clear.addEventListener("click", clearDigits);
+sum.addEventListener("click", sumar);
 
 function consol0() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "0";
+    digitos = screen.innerHTML = digitos + 0;
     return digitos;
   } else {
   }
 }
 function consol1() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "1";
+    digitos = screen.innerHTML = digitos + 1;
     return digitos;
   } else {
   }
 }
 function consol2() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "2";
+    digitos = screen.innerHTML = digitos + 2;
     return digitos;
   } else {
   }
 }
 function consol3() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "3";
+    digitos = screen.innerHTML = digitos + 3;
     return digitos;
   } else {
   }
 }
 function consol4() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "4";
+    digitos = screen.innerHTML = digitos + 4;
     return digitos;
   } else {
   }
 }
 function consol5() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "5";
+    digitos = screen.innerHTML = digitos + 5;
     return digitos;
   } else {
   }
 }
 function consol6() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "6";
+    digitos = screen.innerHTML = digitos + 6;
     return digitos;
   } else {
   }
 }
 function consol7() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "7";
+    digitos = screen.innerHTML = digitos + 7;
     return digitos;
   } else {
   }
 }
 function consol8() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "8";
+    digitos = screen.innerHTML = digitos + 8;
     return digitos;
   } else {
   }
 }
 function consol9() {
   if (digitos.length < 16) {
-    digitos = screen.innerHTML = digitos + "9";
-    console.log(digitos);
+    digitos = screen.innerHTML = digitos + 9;
   } else {
   }
   return digitos;
@@ -104,27 +105,16 @@ function clearDigits() {
 }
 
 function arrayToNumber() {
-  let num =
-    digitos[0] +
-    digitos[1] +
-    digitos[2] +
-    "." +
-    digitos[3] +
-    digitos[4] +
-    digitos[5] +
-    "." +
-    digitos[6] +
-    digitos[7] +
-    digitos[8] +
-    "." +
-    digitos[10] +
-    digitos[11] +
-    digitos[12] +
-    "." +
-    digitos[13] +
-    digitos[14] +
-    digitos[15];
-  var value = num.toLocaleString(undefined);
-  console.log(value);
-  return value;
+  console.log(digitos);
+}
+
+function sumar() {
+  var valor1 = digitos;
+  var valor2 = digitos;
+  let respuesta;
+
+  respuesta = valor1 + valor2;
+
+  console.log(respuesta);
+  return respuesta;
 }
